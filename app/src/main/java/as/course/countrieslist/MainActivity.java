@@ -29,17 +29,7 @@ public class MainActivity extends AppCompatActivity {
         // устанавливаем адаптер
         countriesList.setAdapter(stateAdapter);
 
-        AdapterView.OnItemClickListener itemListener = new AdapterView.OnItemClickListener() {
-            @Override
-            public void onItemClick( AdapterView<?> parent, View v, int position, long id) {
 
-                // получаем выбранный пункт
-                State selectedState = (State)parent.getItemAtPosition(position);
-                Toast.makeText(getApplicationContext(), "Был выбран пункт " + selectedState.getName(),
-                        Toast.LENGTH_SHORT).show();
-            }
-        };
-        countriesList.setOnItemClickListener(itemListener);
     }
     private void setInitialData(){
 
