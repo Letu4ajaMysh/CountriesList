@@ -28,8 +28,6 @@ public class MainActivity extends AppCompatActivity {
         StateAdapter stateAdapter = new StateAdapter(this, R.layout.list_item, states);
         // устанавливаем адаптер
         countriesList.setAdapter(stateAdapter);
-
-
     }
     private void setInitialData(){
 
